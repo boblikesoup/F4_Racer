@@ -6,9 +6,12 @@
 
 <!-- <% if ready? %> -->
   <div class="game_play">
-    <h2>Start Typing!</h2>
+    <span id="temp"> <h2>Start Typing!</h2></span>
+      <div class="game_text">
+        <%= @text %>
+      </div>
     <form action='/evaluate' method='post'>
-      <textarea name='user_input' rows='5' columns='200'></textarea>
+      <textarea class="textbox" name='user_input'></textarea>
       </br>
       <input class="button" type='submit' value='Submit'>
     </form>
