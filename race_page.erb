@@ -1,0 +1,34 @@
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<div class='container'>
+
+<!-- <% if ready? %> -->
+  <div class="game_play"
+   <h2>Start Typing!</h2>
+    </br></br></br></br>
+    <form action='/evaluate' method='post'>
+      <textarea name='user_input' rows='5' columns='200'></textarea>
+      </br>
+      <input type='submit' value='Submit'>
+    </form>
+  </div>
+
+
+
+
+
+  <!-- <% else %> -->
+  <div class="new_game_prompt"
+    <h2>Begin a new game!</h2>
+    <p>Hey turtle, you better type fast or you're gonna get squashed!  Type the words on the screen as fast as you can, but don't make any mistakes.
+    </br></br>
+      Click the button below when you're ready to begin.</p>
+    <form action='/ready' method='post'>
+      <input type='submit' value='Start'>
+    </form>
+  </div>
+<!-- <% end %> -->
+
+</div>
