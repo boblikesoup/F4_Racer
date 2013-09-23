@@ -1,22 +1,16 @@
-<head>
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-<div class='container'>
-
-<!-- <% if ready? %> -->
+<% if @ready %>
   <div class="game_play">
     <span id="temp"> <h2>Start Typing!</h2></span>
       <div class="game_text">
         <%= @text %>
       </div>
-    <form action='/evaluate' method='post'>
+    <form action='/results' method='post'>
       <textarea class="textbox" name='user_input'></textarea>
       </br>
       <input class="button" type='submit' value='Submit'>
     </form>
   </div>
-  <!-- <% else %> -->
+ <% else %> 
   <div class="new_game_prompt">
     <h2>Begin a new game!</h2>
     <p>Hey turtle, you better type fast or you're gonna get squashed!  Type the words on the screen as fast as you can, but don't make any mistakes.
@@ -26,6 +20,4 @@
       <input class="button" type='submit' value='Start'>
     </form>
   </div>
-<!-- <% end %> -->
-
-</div>
+<% end %>
